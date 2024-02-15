@@ -1,0 +1,236 @@
+version: '2.0'
+
+check-update: true
+
+Prefix: '&e&l[BookNews]&f '
+
+OpenBookDelaySecond: 5
+
+OpenBookSoundEffect:
+  enable: true
+  sound-effect: ENTITY_PLAYER_LEVELUP
+
+Open-Book-Onjoin:
+  
+  enable: true
+  # if true, it always open book for players when they join the server.
+  # if false, it only open book for players when server owner clear the player list data (/booknews clear).
+  always: true
+
+KeepBook: false
+
+Message:
+  No-Permission: '&cYou don''t have permission to do this!'
+
+Interactive-Word:
+  '1':
+    word: Go to Next Page
+    placeholder: gotopage2
+    bold: true
+    color: gold
+    italic: false
+    underlined: false
+    obfuscated: false
+    clickevent:
+      enable: true
+      action: CHANGE_PAGE # [OPEN_URL / RUN_COMMAND / CHANGE_PAGE / COPY_TO_CLIPBOARD]
+      value: '2'
+    hoverevent:
+      enable: true
+      text: Click me to go to next page!
+  '2':
+    word: Go to Next Page
+    placeholder: gotopage3
+    bold: true
+    color: gold
+    italic: false
+    underlined: false
+    obfuscated: false
+    clickevent:
+      enable: true
+      action: CHANGE_PAGE # [OPEN_URL / RUN_COMMAND / CHANGE_PAGE / COPY_TO_CLIPBOARD]
+      value: '3'
+    hoverevent:
+      enable: true
+      text: Click me to go to next page!
+  '3':
+    word: Go to Next Page
+    placeholder: gotopage4
+    bold: true
+    color: gold
+    italic: false
+    underlined: false
+    obfuscated: false
+    clickevent:
+      enable: true
+      action: CHANGE_PAGE # [OPEN_URL / RUN_COMMAND / CHANGE_PAGE / COPY_TO_CLIPBOARD]
+      value: '4'
+    hoverevent:
+      enable: true
+      text: Click me to go to next page!
+  '4':
+    word: Go to Next Page
+    placeholder: gotopage5
+    bold: true
+    color: gold
+    italic: false
+    underlined: false
+    obfuscated: false
+    clickevent:
+      enable: true
+      action: CHANGE_PAGE # [OPEN_URL / RUN_COMMAND / CHANGE_PAGE / COPY_TO_CLIPBOARD]
+      value: '5'
+    hoverevent:
+      enable: true
+      text: Click me to go to next page!
+  '5':
+    word: Hover text
+    placeholder: hover
+    bold: false
+    color: black
+    italic: false
+    underlined: false
+    obfuscated: false
+    clickevent:
+      enable: false
+      action: OPEN_URL # [OPEN_URL / RUN_COMMAND / CHANGE_PAGE / COPY_TO_CLIPBOARD]
+      value: ''
+    hoverevent:
+      enable: true
+      text: Hello!
+  '6':
+    word: Open link
+    placeholder: opengoogle
+    bold: false
+    color: black
+    italic: false
+    underlined: false
+    obfuscated: false
+    clickevent:
+      enable: true
+      action: OPEN_URL # [OPEN_URL / RUN_COMMAND / CHANGE_PAGE / COPY_TO_CLIPBOARD]
+      value: https://www.google.com
+    hoverevent:
+      enable: true
+      text: Click me to open google search page!
+  '7':
+    word: Execute command
+    placeholder: spawn
+    bold: false
+    color: black
+    italic: false
+    underlined: false
+    obfuscated: false
+    clickevent:
+      enable: true
+      action: RUN_COMMAND # [OPEN_URL / RUN_COMMAND / CHANGE_PAGE / COPY_TO_CLIPBOARD]
+      value: /spawn
+    hoverevent:
+      enable: true
+      text: Click me to go to spawn!
+  '8':
+    word: Copy to clipboard
+    placeholder: copy
+    bold: false
+    color: black
+    italic: false
+    underlined: false
+    obfuscated: false
+    clickevent:
+      enable: true
+      action: COPY_TO_CLIPBOARD # [OPEN_URL / RUN_COMMAND / CHANGE_PAGE / COPY_TO_CLIPBOARD]
+      value: Oh wow, you have copied me!
+    hoverevent:
+      enable: true
+      text: Click me to copy a text!
+  '9':
+    word: Go back to first page
+    placeholder: gobackfirstpage
+    bold: true
+    color: gold
+    italic: false
+    underlined: false
+    obfuscated: false
+    clickevent:
+      enable: true
+      action: CHANGE_PAGE # [OPEN_URL / RUN_COMMAND / CHANGE_PAGE / COPY_TO_CLIPBOARD]
+      value: '1'
+    hoverevent:
+      enable: true
+      text: Click me to go to first page!
+
+book:
+  # #####################################
+  # "1": # "1" mean page 1               #
+  # |-                                   #
+  #   First Line                         #
+  #   Second Line                        #
+  #   Third Line                         #
+  #   (Spacing will leave the line empty)#
+  #   Fifth Line                         #
+  #                                      #
+  # #####################################
+  '1': |-
+    Hello, this is a book that will automatically open for players
+    when they join the server
+
+
+
+
+
+
+
+
+    %booknews_gotopage2%
+  '2': |-
+    In this plugin, you can use color
+    code, and also hex color (above 1.16)!
+
+    For example:
+    &0- &cRed Color
+    &0- &6Gold color
+    &0- #b4c1f2&lH#a2ade4&lE#909acb&lX #7d87b1&lC#6c7398&lo#5a607f&ll#484d65&lo#36394c&lr
+
+    &0The format for hex color: #{hex_code}
+
+    %booknews_gotopage3%
+  '3': |-
+    The plugin also supports PlaceHolderAPI!
+
+    For example:
+
+    Hello %player_name%!
+
+    There're %server_online% players online!
+
+
+
+    %booknews_gotopage4%
+  '4': |-
+    Clickable/hover texts are also supported!
+
+    For example:
+    - %booknews_hover%
+
+    - %booknews_opengoogle%
+
+    - %booknews_spawn%
+
+    - %booknews_copy%
+
+
+    %booknews_gotopage5%
+  '5': |-
+    Hope you enjoy the plugin!
+
+
+
+
+
+
+
+
+
+
+    %booknews_gobackfirstpage%
+config_version: '2.0'

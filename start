@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# -server 减慢jvm启动时间, 加快其性能
+# -d64 强制使用64位
+# -Xms 初始堆大小
+# -Xmx 最大堆内存
+# -XX:+UseCompressedOops 启用指针压缩, 可以减少一定内存使用
+# -XX:+UseParallelGC 并行GC
+# -XX:InitialRAMPercentage=n 百分比RAM初始堆
+# -XX:MaxRAMPercentage=n 百分比RAM最大堆
+# --add-modules=jdk.incubator.vector pufferfish推荐添加, 关于SIMD
+# -javaagent:{authlib-injector.jar 的路径}={验证服务器 URL (API 地址)} 使用 authlib-injector 登陆, 配合 little-skin 的账号登陆, 并开启online-mode
+
+./jdk17/bin/java -server -Xms1024m -Xmx3072m -XX:+UseParallelGC -XX:+UseCompressedOops --add-modules=jdk.incubator.vector -javaagent:./authlib-injector.jar=https://littleskin.cn/api/yggdrasil -jar pufferfish-1.18.2.jar --nogui

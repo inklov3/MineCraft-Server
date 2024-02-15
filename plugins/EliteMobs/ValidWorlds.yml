@@ -1,0 +1,13 @@
+# Sets the list of zone-based worlds.
+# THE ZONE-BASED GAME MODE IS OUTDATED AND WILL SOON BE REMOVED!
+zoneBasedWorlds: []
+# Sets the list of nightmare mode worlds.
+# Nightmare mode worlds are a game mode where days are shorter and players can not sleep.
+# Nightmare worlds also have higher amounts of elite spawns.
+# https://github.com/MagmaGuy/EliteMobs/wiki/%5BGame-Mode%5D-Nightmare-mode
+nightmareWorlds: []
+Valid worlds:
+  survival: true
+  world: true
+  world_nether: true
+  world_the_end: true

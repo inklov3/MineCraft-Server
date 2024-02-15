@@ -1,0 +1,29 @@
+/jdk*
+banned*
+whitelist.json
+/data-storage
+/libraries
+/logs
+*.log
+usercache.json
+version_history.json
+/versions
+.console_history
+/cache
+# 排除世界无用信息, 其实只需要记录region
+world/*
+!/world/region
+/world_nether
+/world_the_end
+/survival
+# 排除插件杂项
+/plugins/*/*
+/plugins/**/backups
+/plugins/**/backup
+**/*.db
+!/plugins/*/*.yml
+!/plugins/*/*.txt
+!/plugins/nLogin/lang
+!plugins/nLogin/config.yml
+# 排除worldguard似乎没用
+!plugins/WorldGuard/worlds/world/*
