@@ -27,3 +27,4 @@ world/*
 !plugins/WorldGuard/worlds/world/*
 !/plugins/DecentHolograms/animations
 !/plugins/DecentHolograms/holograms
+!/plugins/MOTD/*
