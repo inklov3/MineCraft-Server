@@ -1,10 +1,10 @@
 version: '2.0'
 
-check-update: true
+check-update: false
 
-Prefix: '&e&l[BookNews]&f '
+Prefix: '&e&l[书本信息]&f '
 
-OpenBookDelaySecond: 5
+OpenBookDelaySecond: 0
 
 OpenBookSoundEffect:
   enable: true
@@ -24,7 +24,7 @@ Message:
 
 Interactive-Word:
   '1':
-    word: Go to Next Page
+    word: 下一页 ->
     placeholder: gotopage2
     bold: true
     color: gold
@@ -171,6 +171,7 @@ book:
   #                                      #
   # #####################################
   '1': |-
+    一条测试信息.
     Hello, this is a book that will automatically open for players
     when they join the server
 

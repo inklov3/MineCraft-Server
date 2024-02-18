@@ -160,7 +160,7 @@ critical:
     other: false
 menus:
   placeholder-api: true
-check-for-updates: true
+check-for-updates: false
 automatic-backups:
   enabled: true
   minimum-interval-hours: 24

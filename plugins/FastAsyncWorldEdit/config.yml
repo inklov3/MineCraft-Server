@@ -21,7 +21,7 @@ enabled-components:
   # Leave it off if you don't need it, it can spam your console.
   debug: false
   # Whether or not FAWE should notify you on startup about new versions available.
-  update-notifications: true
+  update-notifications: false
 
 clipboard:
   # Store the clipboard on disk instead of memory

@@ -49,7 +49,7 @@ useGlassToFillMenuEmptySpace: false
 menuUnicodeFormatting: false
 # Sets the language file used by EliteMobs
 # Do NOT change this manually! It is meant to be installed with the command '/em language <languagefile>'
-language: english
+language: chinese_simplified.yml
 # Sets the message sent to players if they run '/em confirm' with no pending commands.
 noPendingCommands: '&cYou don''t currently have any pending commands!'
 # Sets the tracking message for bosses that send tracking messages.

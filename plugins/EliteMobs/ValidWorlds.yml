@@ -8,6 +8,6 @@ zoneBasedWorlds: []
 nightmareWorlds: []
 Valid worlds:
   survival: true
-  world: true
+  world: false
   world_nether: true
   world_the_end: true

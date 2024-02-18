@@ -23,7 +23,7 @@ world/*
 **/*.db
 !/plugins/*/*.yml
 !/plugins/*/*.txt
-!/plugins/nLogin/lang
-!plugins/nLogin/config.yml
 # 排除worldguard似乎没用
 !plugins/WorldGuard/worlds/world/*
+!/plugins/DecentHolograms/animations
+!/plugins/DecentHolograms/holograms
